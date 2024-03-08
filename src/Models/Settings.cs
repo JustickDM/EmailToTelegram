@@ -5,7 +5,7 @@ using System.Text.Json;
 
 namespace EmailToTelegram.Models
 {
-	internal sealed class Settings(string filePath)
+	internal sealed class Settings([NotNull] string filePath)
 	{
 		private readonly static JsonSerializerOptions m_jsonSerializerOptions = new() { WriteIndented = true };
 
